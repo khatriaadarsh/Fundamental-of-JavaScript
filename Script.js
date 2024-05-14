@@ -29,12 +29,32 @@
    //   })
    //   console.log(evenNumbers);
 
-//   ==> Find:  the find() method is used to search for a specific element in an array based on a provided condition. 
+//   ==> Find:  The find() method is used to search for a specific element in an array based on a provided condition. 
 // find() is useful when you want to find the first occurrence of an element in an array that matches a specific condition.
       //  let numbers = [1,2,3,4,5,6];
       //  let found = numbers.find( (val) => {
       //    return val > 2;
       //  }) 
       //  console.log(found);
-       
+
+//   ==>Object: An object is a collection of key-value pairs where each key is string or symbol and each value can be any data type including other object.
+//    Objects in JavaScript are used to represent complex data structures and are one of the fundamental data types in the language.
+
+ const person = {
+   firstName: 'Aadarsh',
+   lastName: 'Kumar',
+   Age: 20,
+   address:{
+      street: 'Block 5 DHA',
+      City: 'Karachi',
+      Country: 'Pakistan'
+   },
+   hobbies: ['Coding','Movies','Singing']
+ };
+ console.log(person)
+ // Accessing properties of the object
+ console.log(person.firstName); // Output: John
+ console.log(person.Age); // Output: 30
+ console.log(person.address.City); // Output: Anytown
+ console.log(person.hobbies[1]); // Output: coding    
 
