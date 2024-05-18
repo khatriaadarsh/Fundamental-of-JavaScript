@@ -103,3 +103,67 @@
    //  // Call the function to calculate the factorial of 5
    //   const result = fact(5);
    //   console.log(`The factorial is: ${result}`);
+
+
+   // Asynchronous JavaScript refers to technique that allow your JavaScript code to perform tasks without the main thread.
+
+   // This means that while a task is being processed like fetching data from an API, the browser can continue to respond to other user interaction making the web application more efficiet and responsive
+
+   // ->Ways to handle asychronous operation are callback, promises, and async/await.
+
+   //---> The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires.
+
+   // 1. CallBacks: A callback is a function into another function as an argument which is then invoked inside the outer function to complete some kind of routine of action.
+ 
+   // function fetchData(callback){
+   //    setTimeout(()=>{
+   //      const data = {name: 'Aadarsh', Age: 30};
+   //      callback(data);
+   //    },2000)
+   // }
+   // //Data passing through argument
+   // fetchData((data)=>{
+   //    console.log(data);
+   //    })
+
+   // 2. Promises: Promises provide a more powerful and flexible way to handle asynochronous operation. A promise represents a value that may be available now or the future or never
+
+//    function fetchData() {
+//       return new Promise((resolve, reject) => {
+//           setTimeout(() => {
+//               const data = { name: "Jane", age: 25 };
+//               resolve(data);
+//           }, 2000);
+//       });
+//   }
+  
+//   fetchData()
+//       .then(data => {
+//           console.log("Data received:", data);
+//       })
+//       .catch(error => {
+//           console.error("Error:", error);
+//       });
+
+//   // 3. Async/Await: Async/Await is a new feature in JavaScript that allows you to write asynchronous code in a more synchronous 
+  
+// function fetchData() {
+//    return new Promise((resolve, reject) => {
+//        setTimeout(() => {
+//            const data = { name: "Alice", age: 28 };
+//            resolve(data);
+//        }, 2000);
+//    });
+// }
+
+// async function handleData() {
+//    try {
+//        const data = await fetchData();
+//        console.log("Data received:", data);
+//    } catch (error) {
+//        console.error("Error:", error);
+//    }
+// }
+
+// handleData();
+
